@@ -4,21 +4,18 @@ A lightweight tool that automatically locks your preferred agent in Valorant as 
 
 ## Features
 
-- **Default Agent Selection**  
+- **Default Agent Selection**
   Choose a primary agent to instalock every game.
 
-- **Map-Specific Overrides**  
+- **Map-Specific Overrides**
   Customize agent picks for specific maps.  
   Example:
   - Default: **Clove**
   - On **Ascent** → lock **Sova**
 
-- **Precise Lock Timing**  
-  Sends a single API request at the exact right moment—so your agent is locked in before the “Match Found” screen even fully appears.
-
-- **No API Spam**  
-  This app does **not** spam REST API calls.  
-  It intelligently waits and sends **one perfectly timed request**, reducing unnecessary traffic and avoiding instability.
+- **No API Spam**
+  This app does **not** spam API requests.
+  It intelligently waits and sends **one perfectly timed request**, so your agent is locked in before the “Match Found” screen even fully appears.
 
 ---
 
@@ -30,15 +27,7 @@ A lightweight tool that automatically locks your preferred agent in Valorant as 
 
 ## How It Works
 
-The app listens for the game state and waits for the exact moment agent selection becomes available. Instead of repeatedly calling the API, it executes a single precise request to guarantee an instant lock-in.
-
----
-
-## Configuration
-
-- Set your **default agent**
-- Optionally define **map-specific agents**
-- Run the app before queueing into a match
+The app listens for the game state and waits for the exact moment agent selection becomes available. Instead of repeatedly calling the API, it executes a single precise request.
 
 ---
 
