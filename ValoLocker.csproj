@@ -1,0 +1,40 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+	<PublishSingleFile>true</PublishSingleFile>
+	<IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
+	<IncludeAllContentForSelfExtract>true</IncludeAllContentForSelfExtract>
+	<LangVersion>preview</LangVersion>
+	<ApplicationIcon>favicon.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Fonts\3270-Regular.otf" />
+    <None Remove="Images\btnClose.png" />
+    <None Remove="Images\btnLogo.png" />
+    <None Remove="Images\btnMaximize.png" />
+    <None Remove="Images\btnMaximize2.png" />
+    <None Remove="Images\btnMinimize.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="favicon.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="RadiantConnect" Version="10.6.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Fonts\3270-Regular.otf" />
+    <Resource Include="Images\btnClose.png" />
+    <Resource Include="Images\btnLogo.png" />
+    <Resource Include="Images\btnMinimize.png" />
+  </ItemGroup>
+
+</Project>
